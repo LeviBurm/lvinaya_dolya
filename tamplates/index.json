@@ -1,0 +1,182 @@
+[
+  [
+    {
+      "Name": "Milk",
+      "Ves": 1500,
+      "Category": "Dairy products",
+      "Price": 67,
+      "Godnost": 7,
+      "Volume": 1000
+    },
+    {
+      "Milk": "Name",
+      "1500": "Ves",
+      "Dairy products": "Category",
+      "67": "Price",
+      "7": "Godnost",
+      "1000": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Chips",
+      "Ves": 150,
+      "Category": "Snacks",
+      "Price": 103,
+      "Godnost": 100,
+      "Volume": 500
+    },
+    {
+      "Chips": "Name",
+      "150": "Ves",
+      "Snacks": "Category",
+      "103": "Price",
+      "100": "Godnost",
+      "500": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Butter",
+      "Ves": 450,
+      "Category": "Dairy products",
+      "Price": 327,
+      "Godnost": 21,
+      "Volume": 200
+    },
+    {
+      "Butter": "Name",
+      "450": "Ves",
+      "Dairy products": "Category",
+      "327": "Price",
+      "21": "Godnost",
+      "200": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Lemon",
+      "Ves": 40,
+      "Category": "Сitrus_fruit",
+      "Price": 17,
+      "Godnost": 62,
+      "Volume": 32
+    },
+    {
+      "Lemon": "Name",
+      "40": "Ves",
+      "Сitrus_fruit": "Category",
+      "17": "Price",
+      "62": "Godnost",
+      "32": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Crispy fish",
+      "Ves": 250,
+      "Category": "Snacks",
+      "Price": 72,
+      "Godnost": 120,
+      "Volume": 300
+    },
+    {
+      "Crispy fish": "Name",
+      "250": "Ves",
+      "Snacks": "Category",
+      "72": "Price",
+      "120": "Godnost",
+      "300": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Crackers",
+      "Ves": 500,
+      "Category": "Snacks",
+      "Price": 149,
+      "Godnost": 99,
+      "Volume": 600
+    },
+    {
+      "Crackers": "Name",
+      "500": "Ves",
+      "Snacks": "Category",
+      "149": "Price",
+      "99": "Godnost",
+      "600": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Grapefruit",
+      "Ves": 300,
+      "Category": "Сitrus fruit",
+      "Price": 64,
+      "Godnost": 15,
+      "Volume": 400
+    },
+    {
+      "Grapefruit": "Name",
+      "300": "Ves",
+      "Сitrus fruit": "Category",
+      "64": "Price",
+      "15": "Godnost",
+      "400": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Tangerine",
+      "Ves": 16,
+      "Category": "Citrus fruit",
+      "Price": 12,
+      "Godnost": 13,
+      "Volume": 23
+    },
+    {
+      "Tangerine": "Name",
+      "16": "Ves",
+      "Citrus fruit": "Category",
+      "12": "Price",
+      "13": "Godnost",
+      "23": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Chicken",
+      "Ves": 1600,
+      "Category": "Meat",
+      "Price": 478,
+      "Godnost": 4,
+      "Volume": 612
+    },
+    {
+      "Chicken": "Name",
+      "1600": "Ves",
+      "Meat": "Category",
+      "478": "Price",
+      "4": "Godnost",
+      "612": "Volume"
+    }
+  ],
+  [
+    {
+      "Name": "Cheese",
+      "Ves": 300,
+      "Category": "Dairy products",
+      "Price": 423,
+      "Godnost": 13,
+      "Volume": 400
+    },
+    {
+      "Cheese": "Name",
+      "300": "Ves",
+      "Dairy products": "Category",
+      "423": "Price",
+      "13": "Godnost",
+      "400": "Volume"
+    }
+  ]
+]

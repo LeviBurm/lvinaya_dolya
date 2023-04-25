@@ -1,0 +1,67 @@
+{% extends "shapka.html" %}
+{% block title %}Главная страница{% endblock %}
+{% block body %}
+<p><br></p>
+{% load static %}
+
+<h1 class=centertext><img src='{% static "img\lvina_dola.png"%}' alt=lvd_png width="356" height="257"></h1>
+
+
+ <h1 class="centertext" id="clock"></h1>
+
+
+ <script>
+  function displayTime() {
+   let currentTime = new Date();
+   let hours = currentTime.getHours();
+   let minutes = currentTime.getMinutes();
+   let seconds = currentTime.getSeconds();
+   let meridiem = "AM";
+
+   if (hours > 12) {
+    meridiem = "AM";
+   }
+
+   if (hours === 0) {
+    hours = 12;
+   }
+
+   if (minutes < 10) {
+    minutes = "0" + minutes;
+   }
+
+   if (seconds < 10) {
+    seconds = "0" + seconds;
+   }
+
+   let clockDiv = document.getElementById("clock");
+   clockDiv.innerText = hours + ":" + minutes + ":" + seconds + " ";
+  }
+
+  setInterval(displayTime, 1000);
+ </script>
+
+<style>
+  h1 {
+   font-size: 3em;
+   margin-top: 50px;
+  };
+#clock {
+    font-size: 5em;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+   }</style>
+
+
+<h3 class="centertext">Львиная доля - магазин для настоящих гурманов! <br> Наша продукция отличается 
+  неповторимым вкусом и высочайшим качеством. <br>
+  Наша команда работает над тем, чтобы каждый наш клиент мог наслаждаться только лучшими продуктами. <br>
+  Посетите наш магазин и попробуйте наши лучшие продукты уже сегодня!</h3>
+
+<h3><br></h3>
+{% endblock %}

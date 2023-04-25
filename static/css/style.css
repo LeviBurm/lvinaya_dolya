@@ -1,0 +1,90 @@
+html{height: 100%; background-color: #d9c07e; }
+body{margin: 0; min-height: 100%; display: grid; grid-template-rows: auto 1fr auto;
+   display:block; margin:auto;}
+header{background: linear-gradient(#d1a92465, #ff910060);border: thick double #b8a46d;
+  width: 1200px; height: 150; display:block; margin:auto; margin-top: 10px;}
+footer{background: linear-gradient(#ff910060, #d1a92465);border: thick double #b8a46d;
+    width: 1200px; height: 200; display:block; margin:auto; margin-bottom: 10px;}
+p {bottom: 10px; margin-left: 30px;font-family: FuturaLightC , Helvetica, sans-serif; color:rgb(5, 34, 87);}
+a {bottom: 10px; margin-left: 40 ;font-family: FuturaLightC , Helvetica, sans-serif; color:rgb(117, 57, 8);}
+h3 {bottom: 10px; margin-left: 30px; font-family: FuturaLightC , Helvetica, sans-serif; color: rgb(167, 123, 43);}
+div {font-family: FuturaLightC , Helvetica, sans-serif; color:rgb(156, 79, 15); width: 1300px; height: 300; display:block; margin:auto; margin-top: 10px;}
+.option{margin-left: 20px; font-family: FuturaLightC , Helvetica, sans-serif; color: rgb(85, 55, 0); background-color: #d9c07e;}
+label{bottom: 10px; margin-left: 30px; font-family: FuturaLightC , Helvetica, sans-serif; color: rgb(167, 123, 43);}
+
+
+.button{margin-left: 20px; background-color: rgba(128, 255, 0, 0.205); border-color: #442701; border-style:double ;}
+.button1{margin-left: 20px; background-color: rgba(155, 103, 5, 0.253); }
+.button2{border-color: #442701; border-style:double ;}
+
+h2 {bottom: 10px; margin-left: 20px; font-family: FuturaLightC , Helvetica, sans-serif; color: rgb(94, 61, 0);}
+h4 {bottom: 10px; margin-left: 20px; font-family: FuturaLightC , Helvetica, sans-serif; color: rgb(94, 61, 0);}
+h5 {bottom: 10px; margin-left: 20px; font-family: FuturaLightC , Helvetica, sans-serif; color: rgb(94, 61, 0);}
+h1 {bottom: 10px; margin-left: 50px ;font-family: FuturaLightC , Helvetica, sans-serif; color:rgb(156, 79, 15)}
+.kartinku-vertikali img {position: absolute; margin: auto; left: 0; top: 0; bottom: 0; right: 0;}
+.kartinku-vertikali {height: 100px; position: relative;}
+img{border-radius: 10px;}
+button{background-color: #d9c07e; color: #442701}
+
+.center{display:block; margin:auto;}
+.centertext{text-align: center;}
+.left_kray{display:block; margin-left: 200px; margin-top: 10px; margin-bottom: 10px;}
+.px20{margin-left: 20px;}
+.px40{margin-left: 40px;}
+.px100{margin-left: 100px;}
+.px600{margin-left: 500px;}
+
+button {
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: all 0.75s ease-in-out;
+  }
+  button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.75s ease-in-out;
+  }
+  button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: all 0.75s ease-in-out;
+  }
+  button:hover {
+    color: #fff;
+  }
+  button:hover::before, button:hover::after {
+    width: 100%;
+  }
+
+.input {
+    background-color: #d9c07e; color: #442701;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.50s ease-in-out;
+  }
+  .input:hover {
+    color: #fff;
+  }
+
+input{background-color: #c2a965;}

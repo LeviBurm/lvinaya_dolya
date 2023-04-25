@@ -1,0 +1,16 @@
+{% extends "shapka.html" %}
+{% block title %}Покупка товара{% endblock %}
+
+{% block body %}
+<h1><br><br><br></h1>
+<form action="{% url 'thx' %}" method="POST">
+    {% csrf_token %}
+    <h1>Введите свою ФИО : {{form.name}}<br>
+    Введите свой номер телефона : {{form.phone}}<br>
+    Введите свой email : {{form.email}}<br><br>
+    <button style="background-color: rgba(62, 255, 3, 0.5); margin-left: 400px; width: 130px; height: 33px; display: inline-block;">Готово</button>
+</form>
+<button style="background-color: rgba(255, 0, 0, 0.5); display: inline-block; margin-left: 60px;" onclick="document.location='javascript:history.back()'">Вернуться</button>
+<h1><br><br><br><br></h1>
+{% endblock %}
+

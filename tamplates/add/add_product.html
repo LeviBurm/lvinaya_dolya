@@ -1,0 +1,14 @@
+{% extends "shapka.html" %}
+
+{% block title %}Добавление товара{% endblock %}
+{% block body %}
+<br><br><br><br><br><br><br><br><br>
+
+<form action="{% url 'add_product' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Добавить товар</button>
+</form>
+    
+    <br><br><br><br><br><br><br><br><br>
+{% endblock %}

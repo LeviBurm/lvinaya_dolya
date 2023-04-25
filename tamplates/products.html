@@ -1,0 +1,47 @@
+{% extends "shapka.html" %}
+
+{% block title %}Products{% endblock %}
+
+{% block body %}
+<br>
+<form method="get" action="{% url 'products' %}">
+    <select class="option" name="category">
+        <option value="">Выберите категорию</option>
+        {% for category in categories %}
+            <option class="option" value={{category.id}}>{{ category.category_name }}</option>
+        {% endfor %}
+    </select>
+    <button class="px20" type="submit">Выбрать</button>
+</form>
+
+{% if selected_category %}
+    <img style="margin-left: 700px;" src='{{ MEDIA_URL }}{{ selected_category.category_picture }}' alt='{{ selected_category.category_name }}' height="250">
+
+    <h1 style="margin-top: -5cm;">Товары категории {{ selected_category.category_name }}:</h1>
+    {% for products in products %}
+    {% if products.product_price > '0' %}
+    <h2>Наименование : {{ products.product_name }}</h2><h3> Цена : {{ products.product_price }}</h3>
+    {% else %}
+    <h2>Наименование : {{ products.product_name }}</h2><h3> Цена : Бесплатно</h3>
+    {% endif %}
+    <button class="button1"  onclick=document.location="{{products.ssilka}}">Посмотреть этот товар</button>
+    </div>
+    {% endfor %}
+
+{% else %}
+
+<h1 style="margin-top: 1.8cm;">Все товары :</h1>
+{% for products in products %}
+{% if products.product_price > '0' %}
+<h2>Наименование : {{ products.product_name }}</h2><h3> Цена : {{ products.product_price }}</h3>
+{% else %}
+<h2>Наименование : {{ products.product_name }}</h2><h3> Цена : Бесплатно</h3>
+{% endif %}
+<button class="button1"  onclick=document.location="{{products.ssilka}}">Посмотреть этот товар</button>
+</div>
+{% endfor %}
+
+{% endif %}
+    
+<h3><br><br><br></h1>
+{% endblock %}

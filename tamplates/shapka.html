@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<header>
+    <ul>
+        <li>
+            <h1 style="margin-left: 50px">Маркет "Львиная доля"</h1>
+            <button style="margin-left: 350px" onclick=document.location='http://10.0.0.7:8000/'>Главная страница</button>
+            <button class="px20" onclick=document.location='http://10.0.0.7:8000/products/'>Продукты магазина</button>
+            <button class="px20" onclick=document.location="http://10.0.0.7:8000/categories/">Json отображение товаров</button>
+        </li>
+    </ul>
+</header>
+
+{% block body %}{% endblock %}
+
+
+
+<section class="footer">
+    <footer class="footer">
+        <p style="text-align: center;"><br>номер телефона: +7(***) *** 52 80 | электронная почта: lion.burmistrov@yandex.ru</p><br>
+    </footer>
+</section>
+</body>
+</html>

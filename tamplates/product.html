@@ -1,0 +1,23 @@
+{% extends "shapka.html" %}
+
+{% block title %}Product{% endblock %}
+
+{% block body %}
+
+
+<h1>{{products.product_name}}</h1>
+
+{% if products.product_price > '0'%}
+
+<h3>ID: {{products.id}}<br>{{products.product_name}}<br>Вес: {{products.product_ves}}<br>Цена: {{products.product_price}}<br>Годность: {{products.product_godnost}}<br>Объём: {{products.product_volume}}<br></h3>           
+
+{% else %}
+
+<h3>ID: {{products.id}}<br>{{products.product_name}}<br>Вес: {{products.product_ves}}<br>Цена: Бесплатно <br>Годность: {{products.product_godnost}}<br>Объём: {{products.product_volume}}<br></h3>   
+
+{% endif %}
+
+<button style="margin-right: 20px; margin-left: 40px;" class="button" onclick=document.location='http://10.0.0.7:8000/product//buy'>купить</button> | <button style="margin-left: 20px; background-color: rgba(255, 0, 0, 0.5);" class="button2" onclick=document.location='javascript:history.back()'>Вернуться назад</button><br>
+<img style="margin-left: 30px; margin-bottom: 30px; margin-top: 30px; height: 400px;" src="{{ MEDIA_URL }}{{products.image}}" alt="{{products.product_name}}" />
+
+{% endblock %}
